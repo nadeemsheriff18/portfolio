@@ -10,7 +10,7 @@
 }
 
 #about_header, #myname, #skills_header, #projects_header, #contact_header {
-  font-family: "Brush Script MT";
+  font-family: "Brush Script MT", "Comic Sans MS", cursive, sans-serif; /* Fallback fonts */
 }
 
 body, html {
