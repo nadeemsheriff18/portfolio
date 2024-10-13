@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Section Backgrounds */
+#home, #skills, #projects, #contact, #about {
+  background: #200122; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #025851, #200122); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #025851, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#about_header, #myname, #skills_header, #projects_header, #contact_header {
+  font-family: "Brush Script MT";
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Adjust padding/margin to prevent overflow */
+.container {
+  padding: 0 15px; /* Adjust padding if necessary */
+}
+
+ul {
+  padding-left: 0;
+}
+
+/* Marquee Animation */
+.animate-marquee {
+  animation: marquee 10s linear infinite;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+  
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+}
