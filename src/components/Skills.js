@@ -26,7 +26,7 @@ const Skills = () => {
         initial={{opacity:0,x:-100}}
         transition={{duration:1}} 
         id='skills_header'
-        className='text-white text-5xl md:text-6xl lg:text-7xl text-center pb-6'>Skills</motion.h1>
+        className='text-white text-4xl md:text-6xl lg:text-7xl text-center pb-6 font-mono'>Skills</motion.h1>
                 <div>
                     <motion.p whileInView={{opacity:1,x:0}}
         initial={{opacity:0,x:-100}}

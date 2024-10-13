@@ -34,9 +34,10 @@ const Home = () => {
             variants={container(1)}
             initial="hidden"
             animate="visible"
-            className='my-2 max-w-xl py-6 font-bold tracking-tighter text-justify px-20 md:text-lg md:px-0 text-white'> 
+            className='my-2 max-w-xl py-6 font-bold tracking-tighter px-20 md:text-lg md:px-0 text-white'> 
     I am an experienced web application developer proficient in React.js, Node.js, and Express for building dynamic and responsive frontends and backends. My expertise includes working with structured databases like SQL and PostgreSQL, and I have a solid understanding of RESTful APIs. Additionally, I have experience in Python and Django for server-side development.
             </motion.p>
+            
           </div>
         </div>
         <div className='w-full lg:w-1/2 lg:p-8 '>
@@ -45,7 +46,7 @@ const Home = () => {
             initial={{x:100,opacity:0}}
             animate={{x:0 , opacity:1}}
             transition={{duration:1, delay:1.2}} 
-            className=" w-[250px] h-[250px] lg:w-[380px] lg:h-[380px] rounded-3xl shadow-xl shadow-[#f5f7f8]" src='/assets/mypic5.jpg' alt="Nadeem Sheriff"></motion.img>
+            className=" w-[200px] h-[200px] lg:w-[380px] lg:h-[380px] rounded-3xl shadow-xl shadow-[#f5f7f8]" src='/assets/mypic5.jpg' alt="Nadeem Sheriff"></motion.img>
               </div>
         </div>
       </div>
