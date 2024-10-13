@@ -9,7 +9,7 @@
   background: linear-gradient(to right, #025851, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#about_header, #myname, #skills_header, #projects_header, #contact_header {
+#about_header,#nav-name, #myname, #skills_header, #projects_header, #contact_header {
   font-family: "Brush Script MT", "Comic Sans MS", cursive, sans-serif; /* Fallback fonts */
 }
 

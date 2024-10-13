@@ -56,22 +56,22 @@ const Home = () => {
           </div>
 
           {/* Buttons */}
-          <div className='flex justify-center mt-8 space-x-4'>
+          <div className='flex justify-center mt-12 space-x-4'>
             <Link
               to="projects"
               smooth={true}
               duration={500}
-              className='text-white font-bold py-2 px-4 rounded-md hover:bg-black transition duration-300 border-2 cursor-pointer font-mono'
+              className='text-white font-bold py-2 px-4 rounded-md hover:bg-black transition duration-300 border-2 cursor-pointer font-mono shadow-xl shadow-[#f5f7f8]'
             >
-              Projects
+             View Projects
             </Link>
             <Link
               to="contact"
               smooth={true}
               duration={500}
-              className="text-white font-bold py-2 px-4 rounded-md hover:bg-black transition duration-300 border-2 cursor-pointer font-mono"
+              className="text-white font-bold py-2 px-4 rounded-md hover:bg-black transition duration-300 border-2 cursor-pointer font-mono shadow-xl shadow-[#f5f7f8]"
             >
-              Contact
+              Contact Me
             </Link>
           </div>
         </div>

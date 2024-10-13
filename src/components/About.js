@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div name='about' id="about" className='w-full h-auto pt-56 sm:pt-0 md:pt-0 lg:pt-0 text-gray-300 bg-gray-900'>
+    <div name='about' id="about" className='w-full h-auto pt-72 sm:pt-0 md:pt-0 lg:pt-0 text-gray-300 bg-gray-900'>
       <div className='flex flex-col justify-center items-center w-full h-full px-4 sm:px-6 md:px-10 lg:px-16 xl:px-32 py-20'>
         <div className='px-4 sm:px-20'>
           <motion.div
@@ -37,7 +37,7 @@ const About = () => {
             >
               I specialize in building dynamic web applications, leveraging technologies like React, Node.js, Express, and structured databases such as SQL and PostgreSQL. My experience extends into designing RESTful APIs, ensuring efficient and scalable solutions.
               <br />
-              I’m passionate about technology, constantly exploring new trends, and I have a keen interest in networks, cybersecurity, and machine learning. This combination of skills allows me to create secure, robust, and innovative applications, and I’m always eager to take on new challenges in the tech space.
+              I’m passionate about technology, constantly exploring new trends, and I also have a keen interest in <span className='font-extrabold text-red-500'>networks, cybersecurity, and machine learning.</span> 
             </motion.p>
           </div>
         </div>

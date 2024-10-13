@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 text-lg text-white z-10">
       {/* Logo */}
       <div className='flex'>
-        <h2 className='text-2xl font-bold font-mono'>Nadeem Sheriff</h2>
+        <h2 id="nav-name" className='text-2xl font-bold font-mono'>Nadeem Sheriff</h2>
         <img className="w-30 h-10" alt="man" src='/assets/man.png'></img>
       </div>
 
