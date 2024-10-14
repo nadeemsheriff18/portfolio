@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div name='about' id="about" className='w-full h-auto pt-72 sm:pt-0 md:pt-0 lg:pt-0 text-gray-300 bg-gray-900'>
+    <div name='about' id="about" className='w-full h-auto pt-80 sm:pt-0 md:pt-0 lg:pt-0 text-gray-300 bg-gray-900'>
       <div className='flex flex-col justify-center items-center w-full h-full px-4 sm:px-6 md:px-10 lg:px-16 xl:px-32 py-20'>
         <div className='px-4 sm:px-20'>
           <motion.div
@@ -12,7 +12,7 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className='mb-8'
           >
-            <p id="about_header" className='motion-safe:animate-bounce text-4xl font-mono sm:text-6xl mt-5 lg:text-7xl font-extrabold'>
+            <p id="about_header" className='motion-safe:animate-bounce text-4xl font-mono sm:text-6xl mt-5 lg:text-7xl font-extrabold text-center'>
               About Me
             </p>
           </motion.div>
@@ -33,7 +33,7 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
-              className='text-base font-semibold font-mono py-2 w-full sm:text-lg md:text-xl lg:text-2xl px-0 text-justify'
+              className='text-base font-semibold font-mono py-2 w-full sm:text-lg md:text-xl lg:text-2xl px-0 text-pretty'
             >
               I specialize in building dynamic web applications, leveraging technologies like React, Node.js, Express, and structured databases such as SQL and PostgreSQL. My experience extends into designing RESTful APIs, ensuring efficient and scalable solutions.
               <br />

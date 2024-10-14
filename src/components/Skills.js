@@ -31,7 +31,7 @@ const Skills = () => {
                     <motion.p whileInView={{opacity:1,x:0}}
         initial={{opacity:0,x:-100}}
         transition={{duration:2}}
-         className='text-4xl font-bold font-mono '>Programming Languages</motion.p>
+         className='text-3xl font-bold font-mono '>Programming Languages</motion.p>
                 </div>
                 <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-10 font-mono'>
                     <div className='shadow-md shadow-[#f5f7f8] hover:scale-110 duration-500'>
@@ -56,7 +56,7 @@ const Skills = () => {
                     <motion.p whileInView={{opacity:1,x:0}}
         initial={{opacity:0,x:-100}}
         transition={{duration:2}}
-         className='text-4xl font-bold font-mono'>Frameworks and Libraries</motion.p>
+         className='text-3xl font-bold font-mono'>Frameworks and Libraries</motion.p>
                 </div>
                 <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-10 font-mono'>
                     <div className='shadow-md shadow-[#f5f7f8]  hover:scale-110 duration-500'>
@@ -89,7 +89,7 @@ const Skills = () => {
                         <motion.p whileInView={{opacity:1,x:0}}
         initial={{opacity:0,x:-100}}
         transition={{duration:1}}
-         className='text-4xl font-bold '>Database Management and other tools</motion.p>
+         className='text-3xl font-bold '>Database Management and other tools</motion.p>
                     </div>
                     <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-10'>
                     <div className='shadow-md shadow-[#f5f7f8]  hover:scale-110 duration-500'>
