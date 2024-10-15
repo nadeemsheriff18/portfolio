@@ -37,7 +37,7 @@ const About = () => {
             >
               I specialize in building dynamic web applications, leveraging technologies like React, Node.js, Express, and structured databases such as SQL and PostgreSQL. My experience extends into designing RESTful APIs, ensuring efficient and scalable solutions.
               <br />
-              I’m passionate about technology, constantly exploring new trends, and I also have a keen interest in <span className='font-extrabold text-red-500'>networks, cybersecurity, and machine learning.</span> 
+              I’m passionate about technology, constantly exploring new trends, and I also have a keen interest in networks, cybersecurity, and machine learning.
             </motion.p>
           </div>
         </div>
