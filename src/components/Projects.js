@@ -39,17 +39,17 @@ const Projects = () => {
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1 }}
             className='w-full lg:w-1/4'>
-            <img src='/assets/blog.jpeg' alt="Blog Page" width={250} height={250} className='mb-6 rounded' />
+            <img src='/assets/carz.png' alt="Car rental" width={250} height={250} className='mb-6 rounded' />
           </motion.div>
           <motion.div 
            whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
            transition={{ duration: 1 }}
            className='w-full max-w-xl flex flex-col lg:w-3/4'>
-            <h6 className='mb-2 font-extrabold'>Blog Page</h6>
-            <p className='mb-2 text-neutral-400 text-pretty'>This blog site allows users to read and upload posts, share their views, and comment on discussions. It serves as a public forum where users can freely share content. Additionally, the platform includes a feature that automatically detects and filters sensitive or abusive language, ensuring a respectful environment for all users.</p>
-            <p className='text-sm'>Technologies: React, Django, SQL, Tailwind CSS, Machine Learning</p>
-            <a className="text-white font-bold p-2 my-2 w-max rounded-md hover:bg-black transition duration-300 border-2 cursor-pointer font-mono shadow-md shadow-[#f5f7f8]" href='https://github.com/nadeemsheriff18/Blog_page'>Github</a>
+            <h6 className='mb-2 font-extrabold'>Car rental Website</h6>
+            <p className='mb-2 text-neutral-400 text-pretty'>The Car Rental Website is a responsive Next.js application that simplifies car booking. It features a dedicated homepage with a hero section, a car showcase for available vehicles, and seamless navigation to the car page. Designed with a modern UI, the platform ensures a smooth user experience, allowing users to browse, select, and rent cars effortlessly. This project combines dynamic routing and optimized design for an intuitive and efficient car rental solution.</p>
+            <p className='text-sm'>Technologies: Nextjs,Tailwind CSS, PostgreSQL</p>
+            <a className="text-white font-bold p-2 my-2 w-max rounded-md hover:bg-black transition duration-300 border-2 cursor-pointer font-mono shadow-md shadow-[#f5f7f8]" href='https://github.com/nadeemsheriff18/carz.com'>Github</a>
           </motion.div>
         </div>
 
@@ -90,7 +90,7 @@ const Projects = () => {
            className='w-full max-w-xl flex flex-col lg:w-3/4'>
             <h6 className='mb-2 font-extrabold'>Project Hawk</h6>
             <p className='mb-2 text-neutral-400 text-pretty'>An application designed to detect malpractice during examinations at schools and universities in real-time. It uses advanced monitoring tools and algorithms to identify suspicious behaviors, such as unauthorized device usage or unusual movement. The app automatically alerts examination controllers, reducing the workload of invigilators and improving the integrity of the examination process.</p>
-            <p className='text-sm'>Technologies: React,Django,YOLO,OpenCV,CNN</p>
+            <p className='text-sm'>Technologies: React,Flask,YOLO,OpenCV,CNN</p>
             <a className="text-white font-bold p-2 my-2 w-max rounded-md hover:bg-black transition duration-300 border-2 cursor-pointer font-mono shadow-md shadow-[#f5f7f8]" href='https://github.com/nadeemsheriff18/Project_Hawk'>Github</a>
             
           </motion.div>

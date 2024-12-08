@@ -16,6 +16,8 @@ import { FaNetworkWired } from "react-icons/fa6";
 import { SiExpress } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiMongodb } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiFlask } from "react-icons/si";
 import {motion} from "framer-motion";
 const Skills = () => {
     return (
@@ -64,6 +66,10 @@ const Skills = () => {
                         <p className='my-4'>React js</p>
                     </div>
                     <div className='shadow-md shadow-[#f5f7f8]  hover:scale-110 duration-500'>
+                        <RiNextjsFill className='w-20 mx-auto' size={30} />
+                        <p className='my-4'>Next js</p>
+                    </div>
+                    <div className='shadow-md shadow-[#f5f7f8]  hover:scale-110 duration-500'>
                         <FaNode className='w-20 mx-auto' size={30} />
                         <p className='my-4'>Node js</p>
                     </div>
@@ -78,6 +84,10 @@ const Skills = () => {
                     <div className='shadow-md shadow-[#f5f7f8]  hover:scale-110 duration-500'>
                         <SiDjango className='w-20 mx-auto' size={30} />
                         <p className='my-4'>Django</p>
+                    </div>
+                    <div className='shadow-md shadow-[#f5f7f8]  hover:scale-110 duration-500'>
+                        <SiFlask className='w-20 mx-auto' size={30} />
+                        <p className='my-4'>Flask</p>
                     </div>
                     <div className='shadow-md shadow-[#f5f7f8]  hover:scale-110 duration-500'>
                         <RiTailwindCssFill className='w-20 mx-auto' size={30} />

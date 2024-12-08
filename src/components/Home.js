@@ -38,7 +38,7 @@ const Home = () => {
               initial="hidden"
               animate="visible"
               className='my-2 max-w-xl py-6 font-bold tracking-tighter px-20 md:text-lg md:px-0 text-white'> 
-              I am an experienced web application developer proficient in React.js, Node.js, and Express for building dynamic and responsive frontends and backends. My expertise includes working with structured databases such as SQL and PostgreSQL, and I have a solid understanding of RESTful APIs. Additionally, I have experience with Python and Django for server-side development.
+              I am an experienced web application developer proficient in React.js, Node.js, and Express for building dynamic and responsive frontends and backends. My expertise includes working with structured databases such as SQL and PostgreSQL as well as MongoDB, and I have a solid understanding of RESTful APIs. Additionally, I have experience with Python and Django for server-side development.
             </motion.p>
           </div>
         </div>
