@@ -21,7 +21,7 @@ import {motion} from "framer-motion";
 import { TbBrandReactNative } from "react-icons/tb";
 const Skills = () => {
     return (
-        <div name="skills" id="skills" className=' py-28 text-white'>
+        <div name="skills" id="skills" className='py-10 text-white'>
 
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <motion.h1 whileInView={{opacity:1,x:0}}
