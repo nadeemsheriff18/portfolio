@@ -4,7 +4,6 @@ import { IoLogoJavascript } from "react-icons/io";
 import { PiFileCppBold } from "react-icons/pi";
 import { FaReact } from "react-icons/fa";
 import { FaNode } from "react-icons/fa";
-import { SiDjango } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMysql } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
@@ -19,6 +18,7 @@ import { SiMongodb } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiFlask } from "react-icons/si";
 import {motion} from "framer-motion";
+import { TbBrandReactNative } from "react-icons/tb";
 const Skills = () => {
     return (
         <div name="skills" id="skills" className=' py-28 text-white'>
@@ -82,8 +82,8 @@ const Skills = () => {
                         <p className='my-4'>Express js</p>
                     </div>
                     <div className='shadow-md shadow-[#f5f7f8]  hover:scale-110 duration-500'>
-                        <SiDjango className='w-20 mx-auto' size={30} />
-                        <p className='my-4'>Django</p>
+                        <TbBrandReactNative className='w-20 mx-auto' size={30}/>
+                        <p className='my-4'>React native</p>
                     </div>
                     <div className='shadow-md shadow-[#f5f7f8]  hover:scale-110 duration-500'>
                         <SiFlask className='w-20 mx-auto' size={30} />

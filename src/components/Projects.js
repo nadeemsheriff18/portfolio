@@ -39,17 +39,17 @@ const Projects = () => {
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1 }}
             className='w-full lg:w-1/4'>
-            <img src='/assets/carz.png' alt="Car rental" width={250} height={250} className='mb-6 rounded' />
+            <img src='/assets/eduvault.png' alt="EduVault" width={250} height={250} className='mb-6 rounded' />
           </motion.div>
           <motion.div 
            whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
            transition={{ duration: 1 }}
            className='w-full max-w-xl flex flex-col lg:w-3/4'>
-            <h6 className='mb-2 font-extrabold'>Car rental Website</h6>
-            <p className='mb-2 text-neutral-400 text-pretty'>The Car Rental Website is a responsive Next.js application that simplifies car booking. It features a dedicated homepage with a hero section, a car showcase for available vehicles, and seamless navigation to the car page. Designed with a modern UI, the platform ensures a smooth user experience, allowing users to browse, select, and rent cars effortlessly. This project combines dynamic routing and optimized design for an intuitive and efficient car rental solution.</p>
-            <p className='text-sm'>Technologies: Nextjs,Tailwind CSS, PostgreSQL</p>
-            <a className="text-white font-bold p-2 my-2 w-max rounded-md hover:bg-black transition duration-300 border-2 cursor-pointer font-mono shadow-md shadow-[#f5f7f8]" href='https://github.com/nadeemsheriff18/carz.com'>Github</a>
+            <h6 className='mb-2 font-extrabold'>EduVault</h6>
+            <p className='mb-2 text-neutral-400 text-pretty'>EduVault is a cloud-based academic storage and collaboration platform built for students. It lets users create subject-wise folders to upload, organize, and access study materials anytime. Students can connect with peers, share resources, and enhance collaborative learning. With a clean, intuitive interface and secure file storage, EduVault makes studying smarter and more connected.</p>
+            <p className='text-sm'>Technologies:React JS, Tailwind CSS, Supabase</p>
+            <a className="text-white font-bold p-2 my-2 w-max rounded-md hover:bg-black transition duration-300 border-2 cursor-pointer font-mono shadow-md shadow-[#f5f7f8]" href='https://github.com/nadeemsheriff18/eduvault'>Github</a>
           </motion.div>
         </div>
 
@@ -81,7 +81,7 @@ const Projects = () => {
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1 }}
             className='w-full lg:w-1/4'>
-            <img src='/assets/exam1.jpg' alt="Ideaforge Hackathon Website" width={250} height={250} className='mb-6 rounded' />
+            <img src='/assets/hawk.png' alt="Project Hawk" width={250} height={250} className='mb-6 rounded' />
           </motion.div>
           <motion.div 
            whileInView={{ opacity: 1, x: 0 }}
@@ -90,7 +90,7 @@ const Projects = () => {
            className='w-full max-w-xl flex flex-col lg:w-3/4'>
             <h6 className='mb-2 font-extrabold'>Project Hawk</h6>
             <p className='mb-2 text-neutral-400 text-pretty'>An application designed to detect malpractice during examinations at schools and universities in real-time. It uses advanced monitoring tools and algorithms to identify suspicious behaviors, such as unauthorized device usage or unusual movement. The app automatically alerts examination controllers, reducing the workload of invigilators and improving the integrity of the examination process.</p>
-            <p className='text-sm'>Technologies: React,Flask,YOLO,OpenCV,CNN</p>
+            <p className='text-sm'>Technologies: React,Flask,YOLO,OpenCV,OpenPose</p>
             <a className="text-white font-bold p-2 my-2 w-max rounded-md hover:bg-black transition duration-300 border-2 cursor-pointer font-mono shadow-md shadow-[#f5f7f8]" href='https://github.com/nadeemsheriff18/Project_Hawk'>Github</a>
             
           </motion.div>
@@ -103,17 +103,17 @@ const Projects = () => {
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1 }}
             className='w-full lg:w-1/4'>
-            <img src='/assets/chatapp.png' alt="Chat Application" width={200} height={200} className='mb-6 rounded' />
+            <img src='/assets/honeypot.jpg' alt="Honeypot" width={200} height={200} className='mb-6 rounded' />
           </motion.div>
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
             transition={{ duration: 1 }}
             className='w-full max-w-xl lg:w-3/4 flex flex-col'>
-            <h6 className='mb-2 font-extrabold'>Chat Application</h6>
-            <p className='mb-2 text-neutral-400 text-pretty'>A one-on-one chat application that ensures privacy and lets users message each other in real-time using WebSockets. The app includes features such as end-to-end encryption for secure conversations, message delivery status (sent, delivered, read receipts), and support for rich media such as images, videos, and files. Users can also set online/offline status, view typing indicators, and maintain a searchable chat history.</p>
-            <p className='text-sm'>Technologies: React, Express, PostgreSQL, Tailwind CSS</p>
-            <a className="text-white font-bold p-2 my-2 w-max rounded-md hover:bg-black transition duration-300 border-2 cursor-pointer font-mono shadow-md shadow-[#f5f7f8]" href='https://github.com/nadeemsheriff18/React-chatApp'>Github</a>
+            <h6 className='mb-2 font-extrabold'>Ecommerce Honeypot</h6>
+            <p className='mb-2 text-neutral-400 text-pretty'>Our project is a fashion e-commerce honeypot that mimics a real online shopping site to attract and study malicious users. It features user authentication, dynamic product listings, cart and checkout functionality, and coupon-based discounts. Built with React on the frontend and Flask on the backend, it uses PostgreSQL for data storage. The system logs interactions to analyze suspicious behavior while appearing fully functional to end users..</p>
+            <p className='text-sm'>Technologies: React, Express, Flask, PostgreSQL, Tailwind CSS</p>
+            <a className="text-white font-bold p-2 my-2 w-max rounded-md hover:bg-black transition duration-300 border-2 cursor-pointer font-mono shadow-md shadow-[#f5f7f8]" href='https://github.com/nadeemsheriff18/Honeypot'>Github</a>
           </motion.div>
         </div>
       </div>
