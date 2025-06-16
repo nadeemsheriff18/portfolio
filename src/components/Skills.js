@@ -34,6 +34,34 @@ const skillsInfo = {
   Linux: "Open-source OS used in servers and development."
 };
 
+const skillCategories = {
+  "Programming Languages": [
+    { Icon: FaPython, name: "Python" },
+    { Icon: IoLogoJavascript, name: "JavaScript" },
+    { Icon: PiFileCppBold, name: "C++" },
+    { Icon: FaJava, name: "Java" },
+  ],
+  "Frameworks and Libraries": [
+    { Icon: FaReact, name: "React js" },
+    { Icon: RiNextjsFill, name: "Next js" },
+    { Icon: FaNode, name: "Node js" },
+    { Icon: FaNetworkWired, name: "REST framework" },
+    { Icon: SiExpress, name: "Express js" },
+    { Icon: TbBrandReactNative, name: "React native" },
+    { Icon: SiFlask, name: "Flask" },
+    { Icon: RiTailwindCssFill, name: "Tailwindcss" },
+  ],
+  "Database & Tools": [
+    { Icon: SiMysql, name: "Mysql" },
+    { Icon: BiLogoPostgresql, name: "Postgresql" },
+    { Icon: SiMongodb, name: "MongoDB" },
+    { Icon: VscVscode, name: "Vscode" },
+    { Icon: FaGithub, name: "Github" },
+    { Icon: SiKubernetes, name: "Kubernetes" },
+    { Icon: FaLinux, name: "Linux" },
+  ]
+};
+
 const SkillCard = ({ Icon, name, size, onClick, isOpen, description }) => (
   <div
     className="shadow-md shadow-[#f5f7f8] hover:scale-105 duration-300 cursor-pointer relative p-2 rounded-md"
@@ -49,78 +77,59 @@ const SkillCard = ({ Icon, name, size, onClick, isOpen, description }) => (
 
 const Skills = () => {
   const [openSkill, setOpenSkill] = useState(null);
+  const [activeCategory, setActiveCategory] = useState("Programming Languages");
 
   const handleSkillClick = (skill) => {
     setOpenSkill(prev => prev === skill ? null : skill);
   };
 
   return (
-    <div name="skills" id="skills" className="py-10 text-white">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+    <div name="skills" id="skills" className="py-10 text-white bg-gray-900">
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full gap-3">
 
         <motion.h1
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1 }}
           className="text-white text-4xl sm:text-5xl md:text-6xl text-center pb-6 font-mono"
-          id="skills_header"
+          id='skills_header'
         >
           Skills
         </motion.h1>
 
-        {/* Programming Languages */}
-        <motion.p
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 2 }}
-          className="text-2xl sm:text-3xl font-bold font-mono"
-        >
-          Programming Languages
-        </motion.p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 py-6 text-center font-mono">
-          <SkillCard Icon={FaPython} name="Python" size={30} onClick={() => handleSkillClick("Python")} isOpen={openSkill === "Python"} description={skillsInfo["Python"]} />
-          <SkillCard Icon={IoLogoJavascript} name="JavaScript" size={30} onClick={() => handleSkillClick("JavaScript")} isOpen={openSkill === "JavaScript"} description={skillsInfo["JavaScript"]} />
-          <SkillCard Icon={PiFileCppBold} name="C++" size={30} onClick={() => handleSkillClick("C++")} isOpen={openSkill === "C++"} description={skillsInfo["C++"]} />
-          <SkillCard Icon={FaJava} name="Java" size={30} onClick={() => handleSkillClick("Java")} isOpen={openSkill === "Java"} description={skillsInfo["Java"]} />
+        {/* Category Buttons */}
+        <div className="flex justify-center flex-wrap gap-4 pb-8">
+          {Object.keys(skillCategories).map((category) => (
+            <button
+              key={category}
+              onClick={() => {
+                setActiveCategory(category);
+                setOpenSkill(null);
+              }}
+              className={`px-4 py-2 font-mono rounded-full text-lg font-bold transition-all duration-300 ${
+                activeCategory === category
+                  ? "bg-teal-500 text-white"
+                  : "bg-gray-700 hover:bg-teal-600"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
         </div>
 
-        {/* Frameworks and Libraries */}
-        <motion.p
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 2 }}
-          className="text-2xl sm:text-3xl font-bold font-mono"
-        >
-          Frameworks and Libraries
-        </motion.p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 py-6 text-center font-mono">
-          <SkillCard Icon={FaReact} name="React js" size={30} onClick={() => handleSkillClick("React js")} isOpen={openSkill === "React js"} description={skillsInfo["React js"]} />
-          <SkillCard Icon={RiNextjsFill} name="Next js" size={30} onClick={() => handleSkillClick("Next js")} isOpen={openSkill === "Next js"} description={skillsInfo["Next js"]} />
-          <SkillCard Icon={FaNode} name="Node js" size={30} onClick={() => handleSkillClick("Node js")} isOpen={openSkill === "Node js"} description={skillsInfo["Node js"]} />
-          <SkillCard Icon={FaNetworkWired} name="REST framework" size={30} onClick={() => handleSkillClick("REST framework")} isOpen={openSkill === "REST framework"} description={skillsInfo["REST framework"]} />
-          <SkillCard Icon={SiExpress} name="Express js" size={30} onClick={() => handleSkillClick("Express js")} isOpen={openSkill === "Express js"} description={skillsInfo["Express js"]} />
-          <SkillCard Icon={TbBrandReactNative} name="React native" size={30} onClick={() => handleSkillClick("React native")} isOpen={openSkill === "React native"} description={skillsInfo["React native"]} />
-          <SkillCard Icon={SiFlask} name="Flask" size={30} onClick={() => handleSkillClick("Flask")} isOpen={openSkill === "Flask"} description={skillsInfo["Flask"]} />
-          <SkillCard Icon={RiTailwindCssFill} name="Tailwindcss" size={30} onClick={() => handleSkillClick("Tailwindcss")} isOpen={openSkill === "Tailwindcss"} description={skillsInfo["Tailwindcss"]} />
-        </div>
-
-        {/* DBMS and Tools */}
-        <motion.p
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 1 }}
-          className="text-2xl sm:text-3xl font-bold font-mono"
-        >
-          Database Management and Other Tools
-        </motion.p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 py-6 text-center font-mono">
-          <SkillCard Icon={SiMysql} name="Mysql" size={30} onClick={() => handleSkillClick("Mysql")} isOpen={openSkill === "Mysql"} description={skillsInfo["Mysql"]} />
-          <SkillCard Icon={BiLogoPostgresql} name="Postgresql" size={30} onClick={() => handleSkillClick("Postgresql")} isOpen={openSkill === "Postgresql"} description={skillsInfo["Postgresql"]} />
-          <SkillCard Icon={SiMongodb} name="MongoDB" size={30} onClick={() => handleSkillClick("MongoDB")} isOpen={openSkill === "MongoDB"} description={skillsInfo["MongoDB"]} />
-          <SkillCard Icon={VscVscode} name="Vscode" size={30} onClick={() => handleSkillClick("Vscode")} isOpen={openSkill === "Vscode"} description={skillsInfo["Vscode"]} />
-          <SkillCard Icon={FaGithub} name="Github" size={30} onClick={() => handleSkillClick("Github")} isOpen={openSkill === "Github"} description={skillsInfo["Github"]} />
-          <SkillCard Icon={SiKubernetes} name="Kubernetes" size={30} onClick={() => handleSkillClick("Kubernetes")} isOpen={openSkill === "Kubernetes"} description={skillsInfo["Kubernetes"]} />
-          <SkillCard Icon={FaLinux} name="Linux" size={30} onClick={() => handleSkillClick("Linux")} isOpen={openSkill === "Linux"} description={skillsInfo["Linux"]} />
+        {/* Skill Cards */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center font-mono">
+          {skillCategories[activeCategory].map(({ Icon, name }) => (
+            <SkillCard
+              key={name}
+              Icon={Icon}
+              name={name}
+              size={30}
+              onClick={() => handleSkillClick(name)}
+              isOpen={openSkill === name}
+              description={skillsInfo[name]}
+            />
+          ))}
         </div>
       </div>
     </div>
