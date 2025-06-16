@@ -63,6 +63,7 @@ const Skills = () => {
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1 }}
           className="text-white text-4xl sm:text-5xl md:text-6xl text-center pb-6 font-mono"
+          id="skills_header"
         >
           Skills
         </motion.h1>
