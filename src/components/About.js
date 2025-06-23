@@ -52,76 +52,68 @@ const About = () => {
                 animate="visible"
                 exit="hidden"
                 transition={{ duration: 0.5 }}
-                className='space-y-4'
+                className='space-y-6 mt-10'
               >
-                <p className='text-base sm:text-lg md:text-xl font-semibold font-sans px-2'>
-                  Heyy, I'm Nadeem Sheriff, a software developer with a strong foundation in full-stack development.
-                  <span className='block mt-2 text-xl sm:text-2xl lg:text-3xl font-extrabold'>
-                    Nice to meet you!
-                  </span>
+                <p className='text-sm sm:text-base md:text-lg lg:text-xl font-sans font-semibold px-2 text-gray-200'>
+                  Hello! I'm <span className='text-teal-400 font-bold'>Nadeem Sheriff</span>, a passionate software developer with a solid foundation in full-stack development.
+                  I enjoy designing scalable backend systems and building clean, intuitive user experiences.
+                  I develop real-world projects using the <span className='text-teal-400 font-bold'>MERN stack</span> and aim to deliver solutions that are both practical and impactful.
                 </p>
-                <p className='text-base sm:text-lg md:text-xl font-semibold font-sans px-2'>
-                  I specialize in building dynamic and user-centric web applications and designing RESTful APIs and developing scalable backend systems.
-                </p>
-                <p className='text-base sm:text-lg md:text-xl font-semibold font-sans px-2'>
-                  I'm deeply passionate about <span className='text-teal-400'>technology, cybersecurity and machine learning</span>. I love learning, experimenting, and continuously building innovative solutions.
-                </p>
-                <p className='text-base sm:text-lg md:text-xl font-semibold font-sans px-2'>
-                  If you’re looking to <span className='text-teal-400 font-semibold'>collaborate on a project or need help with development</span>, feel free to reach out via the contact section. Let's build something impactful together!
+
+                <p className='text-sm sm:text-base md:text-lg lg:text-xl font-sans font-semibold px-2 text-gray-200'>
+                  I'm always excited to <span className='text-teal-400 font-bold'>collaborate on meaningful projects</span> and explore new ideas. If you're working on something exciting, feel free to reach out—I’d love to connect!
                 </p>
               </motion.div>
             )}
 
             {activeTab === "education" && (
-  <motion.div
-    key="education"
-    variants={contentVariants}
-    initial="hidden"
-    animate="visible"
-    exit="hidden"
-    transition={{ duration: 0.5 }}
-    className='space-y-6'
-  >
-    <div className="border border-gray-700 rounded-lg p-4 shadow-md bg-gray-800">
-      <h3 className="text-lg sm:text-xl md:text-2xl font-bold font-sans text-white">
-        Rajalakshmi Engineering College
-      </h3>
-      <p className="text-sm sm:text-base md:text-lg font-sans text-gray-300">
-        B.Tech – Computer Science and Business Systems (2022–2026)
-      </p>
-      <p className="text-sm sm:text-base md:text-lg font-sans text-gray-300">
-        CGPA: 8.25 / 10
-      </p>
-    </div>
+              <motion.div
+                key="education"
+                variants={contentVariants}
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                transition={{ duration: 0.5 }}
+                className='space-y-6 mt-10'
+              >
+                <div className="border border-gray-700 rounded-lg p-4 shadow-md bg-gray-800">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold font-sans text-white">
+                    Rajalakshmi Engineering College
+                  </h3>
+                  <p className="text-sm sm:text-base md:text-lg font-sans text-gray-300">
+                    B.Tech – Computer Science and Business Systems (2022–2026)
+                  </p>
+                  <p className="text-sm sm:text-base md:text-lg font-sans text-gray-300">
+                    CGPA: 8.25 / 10
+                  </p>
+                </div>
 
-    <div className="border border-gray-700 rounded-lg p-4 shadow-md bg-gray-800">
-      <h3 className="text-lg sm:text-xl md:text-2xl font-bold font-sans text-white">
-        Velammal Vidhyashram
-      </h3>
-      <p className="text-sm sm:text-base md:text-lg font-sans text-gray-300">
-        HSC (Grade 12)
-      </p>
-      <p className="text-sm sm:text-base md:text-lg font-sans text-gray-300">
-        Percentage: 94%
-      </p>
-    </div>
+                <div className="border border-gray-700 rounded-lg p-4 shadow-md bg-gray-800">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold font-sans text-white">
+                    Velammal Vidhyashram
+                  </h3>
+                  <p className="text-sm sm:text-base md:text-lg font-sans text-gray-300">
+                    HSC (Grade 12)
+                  </p>
+                  <p className="text-sm sm:text-base md:text-lg font-sans text-gray-300">
+                    Percentage: 94%
+                  </p>
+                </div>
 
-    <div className="border border-gray-700 rounded-lg p-4 shadow-md bg-gray-800">
-      <h3 className="text-lg sm:text-xl md:text-2xl font-bold font-sans text-white">
-        Kavi Bharathi Vidyalaya
-      </h3>
-      <p className="text-sm sm:text-base md:text-lg font-sans text-gray-300">
-        SSLC (Grade 10)
-      </p>
-      <p className="text-sm sm:text-base md:text-lg font-sans text-gray-300">
-        Percentage: 88.9%
-      </p>
-    </div>
-  </motion.div>
-)}
-
+                <div className="border border-gray-700 rounded-lg p-4 shadow-md bg-gray-800">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold font-sans text-white">
+                    Kavi Bharathi Vidyalaya
+                  </h3>
+                  <p className="text-sm sm:text-base md:text-lg font-sans text-gray-300">
+                    SSLC (Grade 10)
+                  </p>
+                  <p className="text-sm sm:text-base md:text-lg font-sans text-gray-300">
+                    Percentage: 88.9%
+                  </p>
+                </div>
+              </motion.div>
+            )}
           </AnimatePresence>
-
         </div>
       </div>
     </div>

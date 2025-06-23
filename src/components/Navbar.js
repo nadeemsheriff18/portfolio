@@ -21,7 +21,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Menu */}
-      <ul className='hidden md:flex font-mono text-lg'>
+      <ul className='hidden md:flex font-mono font-bold text-lg'>
         <li className='hover:text-2xl'><Link to="home" smooth={true} duration={500}>Home</Link></li>
         <li className='hover:text-2xl'><Link to="about" smooth={true} duration={500}>About</Link></li>
         <li className='hover:text-2xl'><Link to="skills" smooth={true} duration={500}>Skills</Link></li>
@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`fixed top-0 left-0 w-full h-screen bg-black text-white flex flex-col justify-center items-center transition-all duration-300 ${nav ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+      <div className={`fixed top-0 font-bold font-mono left-0 w-full h-screen bg-black text-white flex flex-col justify-center items-center transition-all duration-300 ${nav ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
         <ul>
           <li className='py-2 text-2xl'><Link onClick={handleNavToggle} to="home" smooth={true} duration={500}>Home</Link></li>
           <li className='py-2 text-2xl'><Link onClick={handleNavToggle} to="about" smooth={true} duration={500}>About</Link></li>

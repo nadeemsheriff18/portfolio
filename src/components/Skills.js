@@ -1,22 +1,24 @@
 import React, { useState } from 'react';
 import {
-  FaPython, FaReact, FaNode, FaGithub, FaLinux, FaJava
+  FaPython, FaReact, FaNode, FaGithub, FaLinux
 } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 import { PiFileCppBold } from "react-icons/pi";
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 import { SiMysql, SiKubernetes, SiExpress, SiMongodb, SiFlask } from "react-icons/si";
-import { VscVscode } from "react-icons/vsc";
+
 import { FaNetworkWired } from "react-icons/fa6";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandReactNative } from "react-icons/tb";
 import { motion } from "framer-motion";
+import { RiSupabaseFill } from "react-icons/ri";
 
 const skillsInfo = {
   Python: "Versatile language used in web, AI, and automation.",
   JavaScript: "Core scripting language for web development.",
   "C++": "High-performance language for systems and games.",
-  Java: "Object-oriented language used in enterprise apps.",
+  Typescript: "Statically typed superset of javascript.",
   "React js": "Frontend JS library for building UI.",
   "Next js": "React framework with SSR capabilities.",
   "Node js": "Backend JS runtime for scalable applications.",
@@ -28,7 +30,7 @@ const skillsInfo = {
   Mysql: "Relational DBMS widely used in full-stack apps.",
   Postgresql: "Advanced, open-source relational database.",
   MongoDB: "NoSQL document database for scalable apps.",
-  Vscode: "Popular lightweight code editor by Microsoft.",
+  Supabase:"open-source backend-as-a-service (BaaS) that provides a real-time database, authentication, and storage built on top of PostgreSQL.",
   Github: "Platform for version control and collaboration.",
   Kubernetes: "Container orchestration platform.",
   Linux: "Open-source OS used in servers and development."
@@ -39,7 +41,7 @@ const skillCategories = {
     { Icon: FaPython, name: "Python" },
     { Icon: IoLogoJavascript, name: "JavaScript" },
     { Icon: PiFileCppBold, name: "C++" },
-    { Icon: FaJava, name: "Java" },
+    { Icon: SiTypescript, name: "Typescript" },
   ],
   "Frameworks and Libraries": [
     { Icon: FaReact, name: "React js" },
@@ -55,7 +57,7 @@ const skillCategories = {
     { Icon: SiMysql, name: "Mysql" },
     { Icon: BiLogoPostgresql, name: "Postgresql" },
     { Icon: SiMongodb, name: "MongoDB" },
-    { Icon: VscVscode, name: "Vscode" },
+    {Icon:RiSupabaseFill,name:"Supabase"},
     { Icon: FaGithub, name: "Github" },
     { Icon: SiKubernetes, name: "Kubernetes" },
     { Icon: FaLinux, name: "Linux" },
